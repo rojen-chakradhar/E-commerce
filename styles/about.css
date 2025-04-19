@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap");
 
 * {
 	margin: 0;
@@ -18,7 +18,25 @@ body {
 	width: 100%;
 }
 
-.hero {
-  height: 100vh;
-  width: 100%;
+.abt .div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 1vw;
+	text-align: center;
+	margin: 4vw 0;
+}
+
+.abt .div h3 {
+	font-size: 1.2vw;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: var(--black);
+}
+
+.abt .div p {
+	width: 70%;
+	font-size: 1vw;
+	font-weight: 400;
+	color: var(--black);
 }

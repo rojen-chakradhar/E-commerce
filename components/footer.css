@@ -78,7 +78,7 @@ footer .social {
   column-gap: 1vw;
 }
 
-footer .social a {
+footer .social a i {
   font-size: 2vw;
   text-decoration: none;
   color: var(--white);
