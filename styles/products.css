@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+@font-face {
+  font-family: 'massedi';
+  src: url('../assets/fonts/Massedi.otf');
+}
+
+.section {
+  width: 100%;
+  background-color: var(--white);
+  overflow: hidden;
+}
+
+.heading {
+  height: 50vh;
+  margin: 0 5vw;
+  display: flex;
+  align-items: center;
+  cursor: default;
+}
+
+.heading h1 {
+  font-size: 11vw;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: var(--black);
+}
+
+.heading h1 span {
+  font-size: 1.2vw;
+  color: var(--black);
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 5vw;
+  padding: 0 0 2vw;
+  border-bottom: 1px solid #02020280;
+}
+
+.title {
+  font-size: 1.2vw;
+  font-weight: 100;
+  text-transform: capitalize;
+  border-bottom: 1px solid var(--black);
+  cursor: pointer;
+}
+
+.sort {
+  display: flex;
+  align-items: center;
+  column-gap: .5vw;
+}
+
+.sort p {
+  font-size: 1.2vw;
+  font-weight: 100;
+  text-transform: capitalize;
+  color: var(--black);
+}
+
+select {
+  font-size: 1.2vw;
+  font-weight: 100;
+  text-transform: capitalize;
+  border: none;
+  color: var(--black);
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+}
+
+.catalog {
+  padding: 2vw 0 0;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 2vw;
+  margin: 0 5vw;
+  padding: 2vw 0;
+}
+
+aside {
+  height: 300px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+picture {
+  height: 250px;
+  width: 250px;
+  overflow: hidden;
+}
+
+picture:hover img {
+  transform: scale(1.1);
+  transition: all 0.2s linear;
+}
+
+.product {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vw 0 0;
+  font-size: 1.1vw;
+  font-weight: 100;
+  text-transform: capitalize;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products | Rojen</title>
+    <link rel="stylesheet" href="./styles/color.css">
+    <link rel="stylesheet" href="./components/navbar.css">
+    <link rel="stylesheet" href="./components/menu.css">
+    <link rel="stylesheet" href="./components/footer.css">
+    <link rel="stylesheet" href="./styles/products.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <div id="menu-placeholder"></div>
+      <section class="section hero-sec" id="hero">
+        <div id="navbar-placeholder"></div>
+        <article class="heading">
+          <h1>all products <span id="items-count">(0)</span></h1>
+        </article>
+        <div class="filter">
+          <p class="title">filters</p>
+          <div class="sort">
+            <p>sort by:</p>
+            <select name="sort" id="sort">
+              <option value="default">default</option>
+              <option value="price">price</option>
+              <option value="name">name</option>
+            </select>
+          </div>
+        </div>
+      </section>
+      <section class="section catalog">
+        <article id="container">
+        </article>
+      </section>
+      <div id="footer-placeholder"></div>
+    </main>
+    <script src="./scripts/productList.js"></script>
+    <script>
+      const container = document.getElementById("container");
+      const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
+      const itemsCount = document.getElementById("items-count");
+      itemsCount.textContent = `(${products.length})`;
+
+      products.forEach(product => {
+        const card = document.createElement("aside");
+        card.style.cursor = "pointer";
+        card.innerHTML = `
+          <picture>
+            <img src="${product.image}" width="100%" alt="${product.name}">
+          </picture>
+          <div class="product">
+            <p class="name">${product.name}</p>
+            <p class="price">${product.price}</p>
+          </div>
+        `;
+        
+        card.onclick = () => {
+          localStorage.setItem("selectedProduct", product.id);
+          window.location.href = "./product.html";
+        };
+
+        container.appendChild(card);
+      });
+    </script>
+    <script src="./scripts/injectComponents.js"></script>
+  </body>
+</html>

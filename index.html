@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rojen Chakradhar</title>
+    <link rel="stylesheet" href="./styles/color.css">
+    <link rel="stylesheet" href="./components/navbar.css">
+    <link rel="stylesheet" href="./components/menu.css">
+    <link rel="stylesheet" href="./components/footer.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <div id="menu-placeholder"></div>
+      <header id="header">
+        <div class="modal">
+          <h1>This site is just made for demo and is under development.</h1>
+          <h1>Best viewed on desktop.</h1>
+          <button onclick="modal()">ok</button>
+        </div>
+      </header>
+      <section class="section hero-sec" id="hero">
+        <div id="navbar-placeholder"></div>
+        <article class="hero-art">
+          <div class="heading">
+            <div class="txt">
+              <h1>we make</h1>
+              <h1>your brand</h1>
+              <h1>stand out</h1>
+            </div>
+            <div class="imgs">
+              <picture class="img">
+                <!-- <img src="./assets/images/" alt=""> -->
+              </picture>
+              <picture class="img">
+                <!-- <img src="./assets/images/" alt=""> -->
+              </picture>
+            </div>
+          </div>
+          <div class="par">
+            <p>We constantly offer innovative technical solutions, we exclusively develop models, colours, prints with the help of the best raw materials and in synergy with our suppliers: an entirely certified supply chain.</p>
+          </div>
+        </article>
+      </section>
+      <section class="section bestseller">
+        <section class="items">
+          <article class="item">
+            <picture>
+              <!-- <img src="" alt=""> -->
+            </picture>
+            <hr>
+            <h2>tags and hashtags</h2>
+            <p>bestseller</p>
+          </article>
+          <article class="item">
+            <picture>
+              <!-- <img src="" alt=""> -->
+            </picture>
+            <hr>
+            <h2>button bags</h2>
+            <p>bestseller</p>
+          </article>
+          <article class="item">
+            <picture>
+              <!-- <img src="" alt=""> -->
+            </picture>
+            <hr>
+            <h2>personalied security seals</h2>
+            <p>bestseller</p>
+          </article>
+        </section>
+      </section>
+      <div id="footer-placeholder"></div>
+    </main>
+    <script>
+      const header = document.getElementById("header");
+      function modal() {
+        header.style.display = "none";
+      }
+    </script>
+    <script src="./scripts/injectComponents.js"></script>
+  </body>
+</html>

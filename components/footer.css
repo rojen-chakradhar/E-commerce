@@ -1,0 +1,124 @@
+footer {
+	height: 100vh;
+	width: 100%;
+  padding: 0 5vw;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	color: var(--black);
+	border-top: 1px solid var(--black);
+	background-color: var(--white);
+}
+
+footer a {
+  text-decoration: underline;
+  color: var(--black);
+}
+
+footer a:hover {
+  color: purple;
+  transition: color var(--transition);
+}
+
+footer .logo {
+  grid-area: 1 / 1 / 2 / 5;
+  padding-top: 1vw;
+}
+
+footer .logo h1 a {
+  font-size: 4vw;
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--black);
+}
+
+footer .contact {
+	grid-area: 2 / 1 / 5 / 3;
+}
+
+footer .contact form h1,
+footer .nav-links h1,
+footer .support h1 {
+  margin-bottom: 1vw;
+  font-size: 5vw;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+footer .contact form p {
+  width: fit-content;
+  margin-top: 2vw;
+  font-size: 2vw;
+  color: var(--black);
+}
+
+footer .social {
+  grid-area: 5 / 1 / 6 / 3;
+  display: flex;
+  align-items: center;
+  column-gap: 1vw;
+  font-size: 2vw;
+}
+
+footer .social a {
+  height: 4vw;
+  width: 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+  color: var(--txt-white);
+  background-color: var(--black);
+}
+
+footer .social a:hover i {
+  transform: scale(1.2);
+  transition: transform var(--transition);
+}
+
+footer .nav-links {
+	grid-area: 2 / 3 / 5 / 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .nav-links ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2vw;
+  font-size: 2vw;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+footer .support {
+  grid-area: 2 / 4 / 5 / 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .support ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2vw;
+  font-size: 2vw;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+footer ul li span {
+  text-transform: lowercase;
+}
+
+footer .cc {
+  grid-area: 5 / 3 / 6 / 5;
+  display: flex;
+  align-items: center;
+  padding-left: 3vw;
+  font-size: 1.5vw;
+  color: var(--black);
+}

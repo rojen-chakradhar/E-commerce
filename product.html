@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/color.css">
+    <link rel="stylesheet" href="./components/navbar.css">
+    <link rel="stylesheet" href="./components/menu.css">
+    <link rel="stylesheet" href="./components/footer.css">
+    <link rel="stylesheet" href="./styles/product.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <div id="menu-placeholder"></div>
+      <section class="section">
+        <div id="navbar-placeholder"></div>
+        <section id="container">
+          <article class="content product-img" id="product-img">
+          </article>
+          <article class="content product-info" id="product-info">
+          </article>
+        </section>
+      </section>
+      <section id="suggestions" class="suggestions-section">
+        <h1>you may also like</h1>
+        <div class="suggestions-list" id="suggestions-list">
+      </div>
+      </section>
+      <div id="footer-placeholder"></div>
+    </main>
+    <script src="./scripts/productList.js"></script>
+    <script src="./scripts/product.js"></script>
+    <script>
+	    document.title = product.name + " | Rojen";
+    </script>
+    <script>
+      function updateMainImage(src, thumbEl) {
+        const mainImg = document.getElementById("main-product-img");
+        mainImg.style.opacity = "0";
+        setTimeout(() => {
+          mainImg.src = src;
+          mainImg.style.opacity = "1";
+        }, 150);
+      
+        document.querySelectorAll(".thumbnail").forEach(thumb => {
+          thumb.classList.remove("active");
+        });
+        thumbEl.classList.add("active");
+      }
+    </script>
+    <script src="./scripts/injectComponents.js"></script>
+  </body>
+</html>

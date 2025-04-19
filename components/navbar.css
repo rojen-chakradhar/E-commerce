@@ -1,0 +1,33 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 5vw;
+  padding: 1vw 0;
+  font-weight: 900;
+  border-bottom: 1px solid var(--black);
+  background-color: var(--white);
+}
+
+.nav .logo a {
+  font-size: 4vw;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  column-gap: 2vw;
+}
+
+.nav .btn {
+  padding: .8vw 2.8vw;
+  font-size: 1.2vw;
+  text-transform: uppercase;
+  border: 1px solid var(--black);
+  color: var(--black);
+  background-color: transparent;
+  cursor: pointer;
+}

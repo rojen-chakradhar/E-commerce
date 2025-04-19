@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | Rojen</title>
+    <link rel="stylesheet" href="./styles/color.css">
+    <link rel="stylesheet" href="./components/navbar.css">
+    <link rel="stylesheet" href="./components/menu.css">
+    <link rel="stylesheet" href="./components/footer.css">
+    <link rel="stylesheet" href="./styles/cart.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <div id="menu-placeholder"></div>
+      <section class="section hero-sec" id="hero">
+        <div id="navbar-placeholder"></div>
+        <h1 class="heading">shopping cart</h1>
+        <section id="container">
+          <article class="content product" id="product">
+          </article>
+          <article class="content product-info" id="product-info">
+            <h1>total</h1>
+            <div class="smth">
+              <div class="div price">
+                <p class="sub-total-name grey">subtotal</p>
+                <p class="sub-total" id="total"></p>
+              </div>
+              <div class="div delivery">
+                <p class="country-name grey">delivery country</p>
+                <p class="country">united states</p>
+              </div>
+              <div class="div fees">
+                <p class="fee-name grey">estimated shipping</p>
+                <p class="fee">free</p>
+              </div>
+              <div class="final div">
+                <p class="total-name">order total</p>
+                <p class="total-price" id="total"></p>
+              </div>
+            </div>
+            <button class="add-to-cart cart-btn">checkout</button>
+            <div class="cards">
+              <h1>visa</h1>
+              <h1>apple pay</h1>
+              <h1>master card</h1>
+            </div>
+            <details class="details drop-down">
+              <summary class="detail">add promo code <i class="ri-add-line"></i></summary>
+              <p class="detailed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+            </details>
+            <details class="desc drop-down">
+              <summary class="detail">add a gift message <i class="ri-add-line"></i></summary>
+              <p class="detailed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+            </details>
+          </article>
+        </section>
+      </section>
+      <div id="footer-placeholder"></div>
+    </main>
+    <script src="./scripts/injectComponents.js"></script>
+    <script src="./scripts/productList.js"></script>
+    <script src="./scripts/product.js"></script>
+    <script src="./scripts/cart.js"></script>
+  </body>
+</html>

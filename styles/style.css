@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  /* outline: 1px dotted red; */
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'massedi';
+  src: url('../assets/fonts/Massedi.otf');
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #02020280;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10vw 5vw 5vw;
+  border-radius: 1vw;
+  color: var(--black);
+  background-color: var(--txt-white);
+}
+
+.modal button {
+  margin-top: 5vw;
+  padding: .5vw 5vw;
+  font-size: 2vw;
+  text-transform: uppercase;
+}
+
+.section {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--white);
+  overflow: hidden;
+}
+
+.hero-art {
+  margin: 0 5vw;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 3vw 0;
+}
+
+.heading .txt {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading .txt h1 {
+  font-size: 8vw;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.heading .txt h1:nth-child(2) {
+  color: green;
+}
+
+.imgs {
+  height: 62vh;
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  column-gap: 2vw;
+  flex-shrink: 0;
+}
+
+.imgs .img {
+  height: 100%;
+  width: 50%;
+  background-color: var(--black);
+  overflow: hidden;
+}
+
+.par {
+  width: 100%;
+  font-size: 1.5vw;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 5vw;
+}
+
+.item {
+  flex: 1;
+  border: 1px solid red;
+}
+
+.item picture{
+  height: 50px;
+  width: 100px;
+  background-color: var(--black);
+  border: 1px solid red;
+  overflow: hidden;
+}

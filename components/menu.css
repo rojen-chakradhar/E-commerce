@@ -1,0 +1,176 @@
+.menu {
+  position: fixed;
+  left: 0;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: var(--txt-white);
+	background-color: var(--black);
+  z-index: 100;
+  transition: top 0.5s ease;
+  overflow: hidden;
+}
+
+.menu.open {
+	display: flex;
+  top: 0;
+  transition: top 0.5s ease;
+}
+
+.hidden {
+  top: -100%;
+  transition: top 0.5s ease;
+}
+
+.mid {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.mid ul {
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.mid ul li a {
+	display: flex;
+	justify-content: space-between;
+	padding: 1vw 0;
+	font-size: 8vw;
+	line-height: 1;
+	color: var(--txt-white);
+	transition: color var(--transition);
+}
+
+.mid ul:hover .mid ul li a:not(:hover) {
+	color: var(--txt-white)50;
+	transition: color var(--transition);
+}
+
+.mid ul li a {
+	border: 1px solid var(--txt-white);
+	border-left: 0;
+	border-right: 0;
+}
+
+.mid ul li:first-child a {
+	border-top: 0;
+}
+
+.mid ul li:last-child a {
+	border-bottom: 0;
+}
+
+.num {
+	font-size: 1vw;
+}
+
+.menu .txt {
+	display: flex;
+	align-items: center;
+	column-gap: 1vw;
+}
+
+.arrow {
+	margin-right: -9vw;
+	transition: margin var(--transition);
+}
+
+.mid ul li a:hover .arrow {
+	margin: 0;
+	transition: margin var(--transition);
+}
+
+.menu .cc {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5vw;
+}
+
+.close,
+.social,
+.ccc {
+	display: flex;
+	align-items: center;
+  overflow: hidden;
+}
+
+.ur {
+  margin-right: -1.5vw;
+  font-size: 1.5vw;
+  transition: margin var(--transition);
+}
+
+.ccc:hover .ur {
+  margin: 0;
+  transition: margin var(--transition);
+}
+
+.icon {
+  margin-right: -1.3vw;
+  font-size: 1.5vw;
+  transition: margin var(--transition);
+}
+
+.menu .social .icon {
+  margin-right: -1.2vw;
+  font-size: 1.2vw;
+  font-weight: 400;
+  transition: margin var(--transition);
+}
+
+.close:hover .icon {
+  margin: 0;
+  transition: margin var(--transition);
+}
+
+.menu .social:hover .icon {
+  margin: 0;
+  transition: margin var(--transition);
+}
+
+.up,
+.down {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1vw 2vw;
+	line-height: 1;
+}
+
+.menu .logo a {
+	font-size: 2.5vw;
+	text-transform: uppercase;
+	color: var(--txt-white);
+}
+
+.bb {
+	position: relative;
+	cursor: pointer;
+}
+
+.bb::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	border-bottom: .2vw solid var(--txt-white);
+	transition: width var(--transition);
+}
+
+.bb:hover::after {
+	width: 100%;
+	transition: width var(--transition);
+}
+
+.down a {
+	color: var(--txt-white);
+}
