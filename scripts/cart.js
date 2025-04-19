@@ -5,9 +5,10 @@ const cartIds = JSON.parse(localStorage.getItem("cart")) || [];
 let total = 0;
 
 if (cartIds.length === 0) {
-	content.innerHTML = `<img src='https://cdn-icons-png.flaticon.com/512/11329/11329060.png' loading='lazy' width='100vw' alt='empty cart image'><br>
+	content.innerHTML = `
+		<img src='https://cdn-icons-png.flaticon.com/512/11329/11329060.png' loading='lazy' width='100vw' alt='empty cart image'><br>
     <h1>Your cart is empty.</h1>
-    <a href='index.html'>Go back to home</a>
+    <a href='index.html' style='text-decoration: underline;'>Go back to home</a>
     `;
 	cartContainer.style.display = "none";
 	content.style.textAlign = "center";

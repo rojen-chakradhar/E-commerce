@@ -96,6 +96,7 @@ footer ul {
   display: flex;
   flex-direction: column;
   row-gap: 2vw;
+  margin-top: 1vw;
   font-size: 1.2vw;
   text-transform: uppercase;
 }
