@@ -1,34 +1,133 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-  scroll-behavior: smooth;
-  /*outline: 1px dotted red;*/
-  font-family: "Poppins", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	scroll-behavior: smooth;
+	/* outline: 1px dotted red; */
+	font-family: "Poppins", sans-serif;
 }
 
 html,
 body {
-  height: 100%;
-  width: 100%;
-  color: var(--black);
+	height: 100%;
+	width: 100%;
+}
+
+.container * {
+	color: var(--black);
 }
 
 .hero {
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
-  background-color: var(--txt-white);
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	background-color: var(--txt-white);
 }
 
-.heading {
-  margin: 1vw 5vw;
-  text-align: center;
-  font-size: 5vw;
-  font-weight: 900;
+.container {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+  column-gap: 2vw;
+	padding: 4vw 5vw;
+}
+
+.content {
+	flex: 1;
+}
+
+.first-content .div {
+	margin: 2vw 0;
+}
+
+.first-content .cnt {
+	margin: 0 0 2vw;
+}
+
+.first-content .headingg {
+	margin-bottom: 1vw;
+	font-size: 2vw;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+.first-content p {
+	margin: 0 0 1vw;
+	font-size: 1vw;
+	font-weight: 400;
+}
+
+.first-content h3 {
+	font-size: 1vw;
+	font-weight: 500;
+}
+
+.first-content a {
+	font-size: 1vw;
+	font-weight: 400;
+	text-decoration: underline;
+}
+
+.first-content .social-links {
+	display: flex;
+	align-items: center;
+	column-gap: 1vw;
+}
+
+.first-content .socialss h3 {
+	font-size: 1.2vw;
+	text-transform: uppercase;
+}
+
+.first-content .social-links a, .social-links a i {
+	font-size: 1.5vw;
+	text-decoration: none;
+  color: var(--white);
+  -webkit-text-stroke: 1px var(--black);
+}
+
+.contact p {
+	font-size: 1vw;
+	text-transform: uppercase;
+}
+
+.input {
+	margin: 0 0 2vw;
+}
+
+.second-content input {
+	width: 100%;
+	padding: 1vw 0 0;
+	font-size: 1vw;
+	border: none;
+	border-bottom: 1px solid var(--black);
+	background-color: var(--white);
+}
+
+.second-content input:focus,
+textarea:focus {
+	outline: none;
+}
+
+.submit button {
+	padding: 1vw 2vw;
   text-transform: uppercase;
+  font-weight: 500;
+	border: 1px solid var(--black);
+	background-color: var(--white);
+	cursor: pointer;
+}
+
+textarea {
+	width: 100%;
+	padding: 1vw 0 0;
+	font-size: 1vw;
+	border: none;
+	border: 1px solid var(--black);
+	background-color: var(--white);
 }

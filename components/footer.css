@@ -11,13 +11,7 @@ footer {
 }
 
 footer a {
-  text-decoration: underline;
   color: var(--black);
-}
-
-footer a:hover {
-  color: purple;
-  transition: color var(--transition);
 }
 
 footer .logo {
@@ -30,7 +24,6 @@ footer .logo h1 a {
   line-height: 1;
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--black);
 }
 
 footer .contact {
@@ -40,17 +33,43 @@ footer .contact {
 footer .contact form h1,
 footer .nav-links h1,
 footer .support h1 {
-  margin-bottom: 1vw;
-  font-size: 5vw;
+  font-size: 2vw;
   text-transform: uppercase;
-  color: var(--black);
 }
 
 footer .contact form p {
   width: fit-content;
-  margin-top: 2vw;
-  font-size: 2vw;
+  margin-top: 1vw;
+  font-size: 1.2vw;
+  text-transform: lowercase;
+  text-decoration: underline;
   color: var(--black);
+}
+
+footer .contact .email p:first-child {
+  text-transform: uppercase;
+}
+
+footer .contact .email {
+  margin-top: 5vw;
+}
+
+footer .contact .email p {
+  text-transform: none;
+  text-decoration: none;
+}
+
+footer .contact .email input {
+  width: 50%;
+  padding: 1vw 0 0;
+  font-size: 1vw;
+  border: none;
+  border-bottom: 1px solid var(--black);
+  background-color: var(--white);
+}
+
+footer .contact .email input:focus {
+  outline: none;
 }
 
 footer .social {
@@ -58,24 +77,13 @@ footer .social {
   display: flex;
   align-items: center;
   column-gap: 1vw;
-  font-size: 2vw;
 }
 
 footer .social a {
-  height: 4vw;
-  width: 4vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
+  font-size: 2vw;
   text-decoration: none;
-  color: var(--txt-white);
-  background-color: var(--black);
-}
-
-footer .social a:hover i {
-  transform: scale(1.2);
-  transition: transform var(--transition);
+  color: var(--white);
+  -webkit-text-stroke: 1px var(--black);
 }
 
 footer .nav-links {
@@ -85,13 +93,12 @@ footer .nav-links {
   align-items: center;
 }
 
-footer .nav-links ul {
+footer ul {
   display: flex;
   flex-direction: column;
   row-gap: 2vw;
-  font-size: 2vw;
+  font-size: 1.2vw;
   text-transform: uppercase;
-  color: var(--black);
 }
 
 footer .support {
@@ -99,15 +106,6 @@ footer .support {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-footer .support ul {
-  display: flex;
-  flex-direction: column;
-  row-gap: 2vw;
-  font-size: 2vw;
-  text-transform: uppercase;
-  color: var(--black);
 }
 
 footer ul li span {
@@ -118,7 +116,5 @@ footer .cc {
   grid-area: 5 / 3 / 6 / 5;
   display: flex;
   align-items: center;
-  padding-left: 3vw;
-  font-size: 1.5vw;
-  color: var(--black);
+  font-size: 1.2vw;
 }
